@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType, Blueprintable, meta = (BlueprintSpawnableComponent))
 class UNREALJS425_API UMyJavascriptComponent : public UJavascriptComponent
 {
 	GENERATED_BODY()

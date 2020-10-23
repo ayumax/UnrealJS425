@@ -753,6 +753,14 @@ declare class AmbisonicsEncodingSettings extends SoundfieldEncodingSettingsBase 
 	static C(Other: UObject | any): AmbisonicsEncodingSettings;
 }
 
+declare class MyJavascriptComponent extends JavascriptComponent { 
+	static Load(ResourceName: string): MyJavascriptComponent;
+	static Find(Outer: UObject, ResourceName: string): MyJavascriptComponent;
+	static GetDefaultObject(): MyJavascriptComponent;
+	static CreateDefaultSubobject(Name: string, Transient?: boolean, Required?: boolean, Abstract?: boolean): MyJavascriptComponent;
+	static C(Other: UObject | any): MyJavascriptComponent;
+}
+
 declare type EMeshPaintColorViewMode = 'Normal' | 'RGB' | 'Alpha' | 'Red' | 'Green' | 'Blue' | 'EMeshPaintColorViewMode_MAX';
 declare var EMeshPaintColorViewMode : { Normal:'Normal',RGB:'RGB',Alpha:'Alpha',Red:'Red',Green:'Green',Blue:'Blue',EMeshPaintColorViewMode_MAX:'EMeshPaintColorViewMode_MAX', };
 declare class PaintBrushSettings extends UObject { 
